@@ -32,7 +32,7 @@ console.log('Firebase Admin SDK initialized successfully. 🔥');
 
 const startServer = async () => {
     try {
-     
+      console.log('SERVER IS CONNECTING TO THIS DATABASE:', process.env.MONGO_URI);
       console.log('Attempting to connect to MongoDB URI:', process.env.MONGO_URI);
   
      
