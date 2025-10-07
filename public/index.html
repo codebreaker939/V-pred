@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V-PRED // Command Center v4.0</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-aurora"></div>
+
+    <div class="container">
+        <header>
+            <h1>V-PRED Command Center</h1>
+            <div id="current-time" class="time">--:--:--</div>
+        </header>
+        <main id="dashboard">
+            <div id="vehicle-list-panel" class="panel">
+                <h2>Fleet Assets</h2>
+                <div id="vehicles">
+                    <div class="loader"></div>
+                </div>
+            </div>
+            <div id="alert-panel" class="panel large">
+                <h2>System Alerts</h2>
+                <div id="alerts">
+                    <p class="placeholder">Awaiting datalink...</p>
+                </div>
+            </div>
+            <div id="vehicle-display-panel" class="panel">
+                <h2>Asset Details</h2>
+                <div id="vehicle-details">
+                    <img id="vehicle-image" src="/images/innova.png" alt="Vehicle Image">
+                    <h3 id="vehicle-name">Toyota Innova Crysta</h3>
+                    <div id="vehicle-stats">
+                        </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-database-compat.js"></script>
+    
+    <script src="app.js"></script>
+</body>
+</html>
